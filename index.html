@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI English Tutor Chat</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="app-shell">
+    <h1>AI English Tutor</h1>
+    <p class="description">Learn English interactively with voice, emoji, and colorful chat!</p>
+
+    <!-- Level Selector -->
+    <div class="card">
+      <label for="level" class="label">Select Level</label>
+      <select id="level">
+        <option value="beginner">Beginner</option>
+        <option value="intermediate" selected>Intermediate</option>
+        <option value="advanced">Advanced</option>
+      </select>
+    </div>
+
+    <!-- Chat Card -->
+    <div class="card chat-card">
+      <div id="chatWindow" class="chat-window"></div>
+
+      <!-- Typing Indicator -->
+      <div id="typingIndicator" class="typing-indicator">AI is typing<span class="dots">...</span></div>
+
+      <!-- Input -->
+      <div class="input-group">
+        <textarea id="inputText" rows="2" placeholder="Type or speak here..."></textarea>
+        <button id="emojiBtn" class="emoji-btn">😊</button>
+        <button id="voiceBtn" class="voice-btn" title="Click to speak">🎤</button>
+        <button id="submitBtn" class="primary-btn">Send</button>
+      </div>
+
+      <!-- Emoji Picker -->
+      <div id="emojiPicker" class="emoji-picker">
+        <!-- Add more emojis as needed -->
+        <span class="emoji">😀</span>
+        <span class="emoji">😂</span>
+        <span class="emoji">😍</span>
+        <span class="emoji">😎</span>
+        <span class="emoji">🤔</span>
+        <span class="emoji">👍</span>
+        <span class="emoji">🙌</span>
+        <span class="emoji">🎉</span>
+      </div>
+    </div>
+
+    <div id="status" class="status"></div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
